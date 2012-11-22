@@ -71,7 +71,7 @@ int Sys_Milliseconds(void) {
 	return curtime;
 }
 
-#if defined(__BEOS__) && !defined(DEDICATED)
+#if (defined(__BEOS__) || defined(__HAIKU__)) && !defined(DEDICATED)
 /*
 ================
 Sys_XTimeToSysTime

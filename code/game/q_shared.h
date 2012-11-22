@@ -332,7 +332,7 @@ static float LittleFloat (const float *l) { return FloatSwap(l); }
 //=============================================================
 
 //======================= BeOS DEFINES =====================
-#ifdef __BEOS__ // rb010123
+#if defined(__BEOS__) || defined(__HAIKU__) // rb010123
 
 #define stricmp strcasecmp
 
