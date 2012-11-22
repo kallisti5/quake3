@@ -1,0 +1,52 @@
+Quake 3 1.32b for BeOS
+------------
+
+Install
+1. Unzip the archive.
+2. Place the datafiles and q3key in "/boot/home/.q3a/baseq3" for Quake3
+and/or "/boot/home/.q3a/missionpack" for Quake 3 Team Arena
+3. Run Quake3
+4. Play
+------------
+
+Notes and known issues.
+
+-Sound skips and is generally weird.
+
+-The Quake3 virtual machine crashes under BeOS.
+This release has been modified to always fall back
+to interpreter mode. This is slower.
+
+-Fullscreen mode is not implemented.
+
+-Connecting to punkbuster servers will probably not
+work as punkbuster was not open sourced.
+
+-Build with 'make debug' or 'make release'
+You'll also need nasm for building.
+
+-Typing inside the game will sometimes not work
+You can change your name in q3config.cfg
+(/boot/home/.q3a/whatever...)
+------------
+
+-Details on datafiles for Quake 3 Arena
+/boot/home/.q3a/baseq3/
+-r--r--r--   1 baron    users    479493658 Nov 21  1999 pak0.pk3
+-r--r--r--   1 baron    users      374405 Jan 13  2000 pak1.pk3
+-r--r--r--   1 baron    users     7511182 Mar 14  2000 pak2.pk3
+-r--r--r--   1 baron    users      276305 Apr 25  2000 pak3.pk3
+-r--r--r--   1 baron    users     9600350 Dec  4  2000 pak4.pk3
+-r--r--r--   1 baron    users      191872 Dec 14  2000 pak5.pk3
+-r--r--r--   1 baron    users     7346884 Aug 21  2001 pak6.pk3
+-r--r--r--   1 baron    users      320873 Dec 11  2001 pak7.pk3
+-r--r--r--   1 baron    users      454478 Oct  7  2002 pak8.pk3  
+
+-Details on datafiles for Quake 3 Team Arena
+/boot/home/.q3a/missionpack/
+-rw-rw-rw-   1 baron    users    351623691 Dec  7  2000 PAK0.PK3
+-rw-rw-rw-   1 baron    users      383888 Aug 21  2001 PAK1.PK3   
+
+
+------------
+Jens Kalmark a.k.a nobbe - genki0@gmail.com
