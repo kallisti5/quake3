@@ -111,7 +111,7 @@ ifeq ($(PLATFORM),haiku)
   RANLIB=ranlib
 
   THREAD_LDFLAGS=
-  LDFLAGS= -lbe -lroot -lbind -lsocket -lnet -lgame
+  LDFLAGS= -lbe -lroot -lgame -lnetwork -lstdc++
   GLLDFLAGS= -lGL
 
     TARGETS=\
