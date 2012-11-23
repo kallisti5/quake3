@@ -6,7 +6,7 @@
 
 class QGLView : public BGLView {
 	public:
-		QGLView(BRect frame, char *name, int32 resizingMode, int32 flags, int32 type):
+		QGLView(BRect frame, const char *name, int32 resizingMode, int32 flags, int32 type):
 			BGLView(frame, name, resizingMode, flags, type){
 			old_buttons = 0;
 		};
