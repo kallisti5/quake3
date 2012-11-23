@@ -59,7 +59,7 @@ RPM_RELEASE=1
 ## Defaults
 # bk010215 - TODO - add all defaults / kill Ryan
 
-ifeq ($(PLATFORM),beos)
+ifeq ($(PLATFORM),haiku)
 
   ifneq (,$(findstring libc6,$(shell if [ -e /lib/libc.so.6* ];then echo libc6;fi)))
     GLIBC=-glibc
@@ -365,7 +365,7 @@ Q3OBJ = \
     endif
 #	$(B)/client/jctrans.o \
 
-ifeq ($(PLATFORM),beos)
+ifeq ($(PLATFORM),haiku)
 
 	Q3POBJ=\
 		$(B)/client/linux_common.o \
