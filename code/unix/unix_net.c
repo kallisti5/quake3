@@ -188,6 +188,11 @@ qboolean	Sys_GetPacket (netadr_t *net_from, msg_t *net_message)
 
 			if (err == EWOULDBLOCK || err == ECONNREFUSED)
 				continue;
+			#if defined(__HAIKU__)
+			// TODO: This packet timeout needs investigated under Haiku
+			if (err == ETIMEDOUT)
+				continue;
+			#endif
 			Com_Printf ("NET_GetPacket: %s from %s\n", NET_ErrorString(),
 						NET_AdrToString(*net_from));
 			continue;
