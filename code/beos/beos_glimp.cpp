@@ -660,10 +660,10 @@ static qboolean GLW_LoadOpenGL( const char *name ) {
 
 	// load the QGL layer
 	if (QGL_Init(name)) {
- 		fullscreen = (enum qboolean)r_fullscreen->integer;
+ 		fullscreen = (qboolean)r_fullscreen->integer;
 
 		// create the window and set up the context
-		if (!GLW_StartDriverAndSetMode(name, r_mode->integer, (enum qboolean)fullscreen)) {
+		if (!GLW_StartDriverAndSetMode(name, r_mode->integer, (qboolean)fullscreen)) {
 			printf("GLW_LoadOpenGL2\n");
 			if (r_mode->integer != 3) {
 				if (!GLW_StartDriverAndSetMode(name, 3, fullscreen)) {
