@@ -74,7 +74,7 @@ ifeq ($(PLATFORM),haiku)
 
   # bk001205: no mo'  -I/usr/include/glide, no FX
   # bk001205: no mo'  -Dstricmp=strcasecmp, see q_shared.h
-  BASE_CFLAGS =  -pipe -fsigned-char -Did386 -fPIC
+  BASE_CFLAGS =  -pipe -fsigned-char -Did386 -fPIC -fpermissive
 # -DDLL_ONLY
 	#jens test with DLLONLY ovan
 
