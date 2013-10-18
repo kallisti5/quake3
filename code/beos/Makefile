@@ -1895,7 +1895,7 @@ clean-release:
 	$(MAKE) clean2 B=$(BR) CFLAGS="$(DEBUG_CFLAGS)"
 
 install: default
-	cp $(BD)/Quake3 `finddir B_SYSTEM_APPS_DIR`
+	cp $(BD)/Quake3 `finddir B_SYSTEM_APPS_DIRECTORY`
 
 # TTimo: for the setups it's easier to shell out to a script
 
